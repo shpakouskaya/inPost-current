@@ -1,0 +1,15 @@
+<div class="generate-section">
+  <h1>Generate QR code</h1>
+
+  <div class="generate-section-switch">
+    <button (click)="setState1()">Get</button>
+    <button (click)="setState2()">Send</button>
+  </div>
+
+  <p>Code:</p>
+  <input type="text" (input)="changeCodeValue($event)">
+<!--  <p *ngIf="error">-->
+<!--    {{ error.msg}}-->
+<!--  </p>-->
+  <button (click)="getQR()">Click</button>
+</div>
